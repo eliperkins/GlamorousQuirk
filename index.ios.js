@@ -17,6 +17,11 @@ const CanYouSeeMe = glamorous(View)({
   backgroundColor: 'tomato',
 });
 
+const ThisShouldWorkFine = glamorous(Text)({
+  fontSize: 24,
+  fontStyle: 'italic',
+});
+
 export default class GlamorousQuirk extends Component {
   render() {
     return (
@@ -27,6 +32,7 @@ export default class GlamorousQuirk extends Component {
         <CanYouSeeMe>
           <Text>Can you see this?</Text>
         </CanYouSeeMe>
+        <ThisShouldWorkFine>I bet this works fine.</ThisShouldWorkFine>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
